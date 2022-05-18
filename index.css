@@ -3,8 +3,29 @@ body {
     padding: 0;
 }
 
+:root {
+    --light-red: #ce6b5d;
+    --light-basic: #f3f3f3;
+}
+
 header {
-    background-color: brown;
-    height: 100vh;
+    padding-top: 40px;
+    color: var(--light-basic);
+    background-color: var(--light-red);
+    min-height: 100vh;
     width: 100vw;
+}
+
+#logo_header {
+    width: 180px;
+    margin-bottom: 40px;
+}
+
+#youtube_video {
+    pointer-events: none;
+    width: 700px;
+}
+
+.video-buttons {
+    padding: 14px 0 44px 0;
 }
