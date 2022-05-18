@@ -42,7 +42,7 @@ header {
     padding-top: 160px;
     color: var(--light-basic);
     background-color: var(--light-red);
-    background: linear-gradient(180deg, #ce6b5d, #ce6b5d, #ce6b5d, #f3f3f3);
+    background: linear-gradient(180deg, var(--light-green), var(--light-green), var(--light-green), var(--light-green), #f3f3f3);
     min-height: 100vh;
 }
 
@@ -75,8 +75,18 @@ header {
     font-size: 1em;
 }
 
+.text-1 {
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+.text-2 {
+    text-align: start !important;
+    font-size: 1em;
+}
+
 .session {
     background-color: var(--light-basic);
     text-align: center;
-    padding: 150px 0 150px 0;
+    padding: 100px 0 150px 0;
 }

@@ -6,7 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 
 
@@ -23,7 +24,11 @@
         <script>
 
             // Set the date we're counting down to 
-            var countDownDate = new Date("April 25, 2023 12:00:00").getTime();
+            var aux = new Date();
+            var countDownDate = new Date();
+            countDownDate.setMinutes(aux.getMinutes() + 110);
+            countDownDate = countDownDate.getTime();
+            //var countDownDate = new Date("April 25, 2023 12:00:00").getTime();
             // Update the count down every 1 second 
             var x = setInterval(function () { // Get todays date and time 
                 var now = new Date().getTime();
@@ -60,7 +65,10 @@
                 <div style="position: relative; height: 0; padding-bottom: 56.2%; padding-top: 0;">
                     <iframe class="youtube-video"
                         style="position: absolute !important; width: 100% !important; height: 100% !important; z-index: 100"
-                        src="https://www.youtube.com/embed/OSqiJbQCCvE?enablejsapi=1&version=3&playerapiid=ytplayer&controls=0" modestbranding="0"  controls="0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="0"></iframe>
+                        src="https://www.youtube.com/embed/OSqiJbQCCvE?enablejsapi=1&version=3&playerapiid=ytplayer&controls=0"
+                        modestbranding="0" controls="0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen="0"></iframe>
                     <div
                         style="position: absolute;top: 0;width: 100%;height: 70px;background-color: transparent;z-index: 101;left: 0;">
                     </div>
@@ -108,7 +116,23 @@
     </header>
 
     <div class="session">
-        teste
+        <div class="container-fluid row">
+            <div class="col-lg-4 p-4">
+                <span class="text-1">Acesso imediato</span><br>
+                <span class="text-2">Seu login e senha serão enviados ao seu e-mail logo após o processamento do
+                    pagamento.</span>
+            </div>
+            <div class="col-lg-4 p-4">
+                <span class="text-1">7 dias de garantia</span><br>
+                <span class="text-2">Sua inscrição com risco zero. Você poderá pedir a devolução de 100% do seu
+                    dinheiro dentro de 7 dias. Sem burocracias.</span>
+            </div>
+            <div class="col-lg-4 p-4">
+                <span class="text-1">Pagamento seguro</span><br>
+                <span class="text-2">Seu pagamento está 100% seguro. E seus dados estão protegidos conosco.</span>
+            </div>
+
+        </div>
     </div>
 
 </body>
