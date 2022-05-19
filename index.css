@@ -1,5 +1,7 @@
 @import url('https://db.onlinewebfonts.com/c/58045dabdc3a361cb9bb9faf2f1dd1f3?family=Digital-7');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('http://fonts.cdnfonts.com/css/manus-smoothtrial');
+
 
 :root {
     --dark-red: #941f1f;
@@ -47,7 +49,7 @@ header {
 }
 
 #logo_header {
-    width: 180px;
+    width: 225px;
     margin-bottom: 40px;
 }
 
@@ -75,6 +77,16 @@ header {
     font-size: 1em;
 }
 
+.icon-group-1 {
+    color: var(--light-green);
+    font-size: 4em;
+}
+
+.title {
+    font-family: 'Manus Smooth_TRIAL', 'Roboto', sans-serif;
+    font-size: 3em;
+}
+
 .text-1 {
     font-size: 1.6em;
     font-weight: 700;
@@ -88,5 +100,16 @@ header {
 .session {
     background-color: var(--light-basic);
     text-align: center;
-    padding: 100px 0 150px 0;
+    padding: 65px 0 65px 0;
+}
+
+.session2 {
+    background-color: var(--light-red);
+    color: var(--light-basic);
+    text-align: center;
+    padding: 65px 0 25px 0;
+}
+
+.texto-depoimento {
+    text-align: left;
 }
