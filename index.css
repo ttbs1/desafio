@@ -113,3 +113,7 @@ header {
 .texto-depoimento {
     text-align: left;
 }
+
+.accordion-body {
+    text-align: left;
+}
