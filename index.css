@@ -117,3 +117,24 @@ header {
 .accordion-body {
     text-align: left;
 }
+
+.desconto {
+    color: red;
+    text-decoration: line-through;
+    font-weight: 600;
+}
+
+.desconto2 {
+    color: green;
+    font-weight: 600;
+}
+
+.footer {
+    color: var(--light-basic);
+    background-color: var(--dark-red);
+}
+
+.footer a {
+    color: var(--light-basic);
+    text-decoration: none;
+}
