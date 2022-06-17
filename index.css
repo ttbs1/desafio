@@ -41,10 +41,10 @@ body {
 }
 
 header {
-    padding-top: 160px;
+    padding: 160px 0 35px 0;
     color: var(--light-basic);
     background-color: var(--light-red);
-    background: linear-gradient(180deg, var(--light-green), var(--light-green), var(--light-green), var(--light-green), #f3f3f3);
+    background-image: url('util/wallpapers/1.jpg');
     min-height: 100vh;
 }
 
@@ -73,8 +73,9 @@ header {
 }
 
 .video-text-2 {
-    color: var(--dark-green);
+    color: black;
     font-size: 1em;
+    font-weight: 500;
 }
 
 .icon-group-1 {
