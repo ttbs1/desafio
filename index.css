@@ -43,8 +43,7 @@ body {
 header {
     padding: 160px 0 35px 0;
     color: var(--light-basic);
-    background-color: var(--light-red);
-    background-image: url('util/wallpapers/1.jpg');
+    background-color: var(--light-basic);
     min-height: 100vh;
 }
 
