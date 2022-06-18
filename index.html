@@ -10,7 +10,7 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
+    <script type="text/javascript" src="index.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <script type='text/javascript' src='util/jquery.min.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
@@ -23,37 +23,7 @@
 
 <body>
     <nav>
-
         <div class="cronometro" id="dday"></div>
-
-        <script>
-
-            // Set the date we're counting down to 
-            var aux = new Date();
-            var countDownDate = new Date();
-            countDownDate.setMinutes(aux.getMinutes() + 110);
-            countDownDate = countDownDate.getTime();
-            //var countDownDate = new Date("April 25, 2023 12:00:00").getTime();
-            // Update the count down every 1 second 
-            var x = setInterval(function () { // Get todays date and time 
-                var now = new Date().getTime();
-                // Find the distance between now an the count down date 
-                var distance = countDownDate - now;
-                // Time calculations for days, hours, minutes and seconds 
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                if (hours < 10) hours = "0" + hours;
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                if (minutes < 10) minutes = "0" + minutes;
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                if (seconds < 10) seconds = "0" + seconds;
-                // Display the result in the element with id="demo" 
-                document.getElementById("dday").innerHTML = "<div><span>O valor promocional encerra automaticamente em:</span></div>" + hours + ":" + minutes + ":" + seconds;
-                // If the count down is finished, write some text 
-                if (distance < 0) { clearInterval(x); document.getElementById("dday").innerHTML = "00:00:00"; }
-            }, 1000);
-
-        </script>
-
     </nav>
     <header>
         <div class="container-fluid d-flex justify-content-center">
@@ -120,7 +90,7 @@
 
     </header>
 
-    <div class="session">
+    <div class="session hide">
         <div class="container-fluid d-flex justify-content-center">
             <div class="container row">
                 <div class="container-fluid d-flex justify-content-center">
@@ -194,7 +164,7 @@
         </div>
     </div>
 
-    <div class="session2">
+    <div class="session2 hide">
         <div class="container-fluid d-flex justify-content-center">
             <div class="container row">
                 <div class="col-lg-12 p-2 mb-3">
@@ -266,7 +236,7 @@
         </div>
     </div>
 
-    <div class="session">
+    <div class="session hide">
         <div class="container-fluid d-flex justify-content-center">
             <div class="container row">
                 <div class="col-lg-12">
@@ -565,7 +535,7 @@
 
         <div class="d-flex justify-content-center">
             <div class="col-lg-6">
-                <span class="title">Perguntas frequentes - FAQ</span>
+                <span class="title">Perguntas frequentes</span>
                 <div class="accordion accordion-flush" id="accordionFlushExample2">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-heading1">
@@ -701,7 +671,7 @@
         <br><br><br><br>
         operacional: liberar site após 15min, video autoplay 4seg, fontes funcionando somente PC
     </div>
-    <div class="footer d-flex justify-content-center py-5">
+    <div class="footer d-flex justify-content-center py-5 hide">
         <div class="row" style="max-width: 100%">
             <div class="col-lg-12 d-flex justify-content-center">
                 <div class="row">

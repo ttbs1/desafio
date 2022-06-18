@@ -82,8 +82,8 @@ header {
 
 .title {
     font-family: 'Square Peg', 'Roboto', sans-serif;
-    font-size: 5em;
-    font-weight: 800;
+    font-size: 4.5em;
+    font-weight: 700;
 }
 
 .text-1 {
@@ -136,4 +136,8 @@ header {
 .footer a {
     color: var(--light-basic);
     text-decoration: none;
+}
+
+.hide {
+    display: none !important;
 }
