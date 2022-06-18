@@ -1,7 +1,5 @@
-@import url('https://db.onlinewebfonts.com/c/58045dabdc3a361cb9bb9faf2f1dd1f3?family=Digital-7');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('http://fonts.cdnfonts.com/css/manus-smoothtrial');
-
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Square+Peg&display=swap');
 
 :root {
     --dark-red: #941f1f;
@@ -25,10 +23,10 @@ body {
 .cronometro {
     background-color: var(--dark-red); 
     color: var(--light-basic); 
-    font-size: 4em; 
-    font-weight: normal; 
+    font-size: 3.6em; 
+    font-weight: 600; 
     text-align: center;
-    font-family: 'digital-7 mono';
+    font-family: 'Chakra Petch';
     position: fixed;
     width: 100%;
     padding-top: 12px;
@@ -83,8 +81,9 @@ header {
 }
 
 .title {
-    font-family: 'Manus Smooth_TRIAL', 'Roboto', sans-serif;
-    font-size: 3em;
+    font-family: 'Square Peg', 'Roboto', sans-serif;
+    font-size: 5em;
+    font-weight: 800;
 }
 
 .text-1 {
