@@ -3,9 +3,9 @@ var aux = new Date();
 var countDownDate = new Date();
 //countDownDate.setMinutes(aux.getMinutes() + totalTime);
 var totalTime = parseInt(sessionStorage.getItem("timeRemaining"));
-if(isNaN(totalTime)) totalTime = 6600;
+if (isNaN(totalTime)) totalTime = 6600;
 
-totalTime = 6600; //REMOVER DEPOIS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+//totalTime = 6600; //REMOVER DEPOIS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 countDownDate.setSeconds(aux.getSeconds() + totalTime);
 countDownDate = countDownDate.getTime();
 //var countDownDate = new Date("April 25, 2023 12:00:00").getTime();
@@ -15,16 +15,16 @@ var x = setInterval(function () { // Get todays date and time
     // Find the distance between now an the count down date 
     var distance = countDownDate - now;
     totalTime--;
-    if (totalTime <= 6580) { //5700 o correto
+    if (totalTime <= 5700) { //5700 o correto - 6600 pra liberar insta
         var hide = document.getElementsByClassName("hide");
-        for(let i = 0; i < hide.length; i++) {
+        for (let i = 0; i < hide.length; i++) {
             hide[i].classList.remove("hide");
         }
     }
 
-    if (totalTime == 6595 || totalTime == 6594)
-        document.getElementById("play-video").click();
-
+    //if (totalTime == 6595 || totalTime == 6594) {
+        //document.getElementById("play-video").click()
+    //}
     sessionStorage.setItem("timeRemaining", totalTime);
     // Time calculations for days, hours, minutes and seconds 
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -38,3 +38,13 @@ var x = setInterval(function () { // Get todays date and time
     // If the count down is finished, write some text 
     if (distance < 0) { clearInterval(x); document.getElementById("dday").innerHTML = "<div><span>Tempo esgotado! Ao fechar a página, a oferta promocional termina.</span></div>00:00:00"; }
 }, 1000);
+
+$(document).ready(function () {
+    $('.play-video').click(function () {
+        $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+    });
+
+    $('.pause-video').click(function () {
+        $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+    });
+});
