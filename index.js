@@ -5,7 +5,7 @@ var countDownDate = new Date();
 var totalTime = parseInt(sessionStorage.getItem("timeRemaining"));
 if (isNaN(totalTime)) totalTime = 6600;
 
-totalTime = 6600; //REMOVER DEPOIS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+//totalTime = 6600; //REMOVER DEPOIS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 countDownDate.setSeconds(aux.getSeconds() + totalTime);
 countDownDate = countDownDate.getTime();
 //var countDownDate = new Date("April 25, 2023 12:00:00").getTime();
@@ -15,7 +15,7 @@ var x = setInterval(function () { // Get todays date and time
     // Find the distance between now an the count down date 
     var distance = countDownDate - now;
     totalTime--;
-    if (totalTime <= 6600) { //5700 o correto - 6600 pra liberar insta
+    if (totalTime <= 5700) { //5700 o correto - 6600 pra liberar insta
         var hide = document.getElementsByClassName("hide");
         for (let i = 0; i < hide.length; i++) {
             hide[i].classList.remove("hide");
