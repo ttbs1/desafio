@@ -55,6 +55,10 @@ header {
     pointer-events: none;
 }
 
+#youtube-video-handle-click {
+    background-color: black;
+}
+
 .video-buttons {
     padding: 14px 0 14px 0;
 }
