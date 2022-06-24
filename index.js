@@ -15,7 +15,7 @@ var x = setInterval(function () { // Get todays date and time
     // Find the distance between now an the count down date 
     var distance = countDownDate - now;
     totalTime--;
-    if (totalTime <= 5700) { //5700 o correto - 6600 pra liberar insta
+    if (totalTime <= 5880) { //5700 o correto - 6600 pra liberar insta
         var hide = document.getElementsByClassName("hide");
         for (let i = 0; i < hide.length; i++) {
             hide[i].classList.remove("hide");
